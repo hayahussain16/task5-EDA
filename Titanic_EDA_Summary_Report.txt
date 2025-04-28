@@ -1,0 +1,50 @@
+
+TITANIC DATASET — EDA SUMMARY REPORT
+
+1. Introduction
+The Titanic dataset provides data about passengers, such as their age, gender, class, fare paid, and survival status.
+The goal of this Exploratory Data Analysis (EDA) is to uncover patterns, trends, and key insights related to survival on the Titanic.
+
+2. Dataset Overview
+- Rows: 891 passengers
+- Columns: 12 features (like Age, Fare, Pclass, Sex, etc.)
+- Missing Values:
+  - Age: Missing for 177 passengers
+  - Cabin: Mostly missing
+  - Embarked: 2 missing values
+
+3. Univariate Analysis (Single Column)
+- Sex: More males (577) than females (314).
+- Pclass: Most passengers belonged to 3rd class.
+- Age: Most passengers were between 20 to 40 years old.
+- Fare: Majority paid low fares, few paid very high fares.
+
+4. Bivariate Analysis (Comparing Two Columns)
+- Survival by Sex: Females had a much higher survival rate than males.
+- Survival by Class: 1st class passengers had higher survival rates than 2nd and 3rd class.
+- Fare by Class: 1st class passengers paid higher fares on average.
+
+5. Multivariate Analysis
+- Heatmap:
+  - Positive correlation between Fare and Survival (higher fare -> better chance of survival).
+  - Negative correlation between Pclass and Fare (lower class -> cheaper fare).
+- Pairplot:
+  - Survivors often belonged to 1st class and paid higher fares.
+  - Age and survival had no strong visible pattern.
+
+6. Visual Insights Summary
+- Histograms: Most passengers were young adults with low ticket fares.
+- Barplots: Females and 1st class passengers had higher survival.
+- Boxplots: Fare had many outliers, especially in 1st class.
+- Heatmaps: Fare and Pclass strongly related to survival chances.
+
+7. Conclusion
+- Gender and Class were the strongest factors in survival.
+- Younger passengers and higher-paying passengers had better survival chances.
+- Cabin feature could be very informative, but it has too many missing values.
+- Further modeling could predict survival using features like Sex, Pclass, and Fare.
+
+8. Key Learnings
+- EDA is essential for finding hidden patterns before modeling.
+- Visualizations (barplots, heatmaps) make relationships easy to spot.
+- Always check for missing data early in the process.
